@@ -1,0 +1,53 @@
+.content{
+  background-size: cover;
+  height: 422px;
+}
+.article-bg{
+  background-image: url(../imgs/article-bg.jpg);
+}
+.news-bg{
+  background-image: url(../imgs/news-bg.jpg);
+}
+.events-bg{
+  background-image: url(../imgs/events-bg.jpg);
+}
+.joinus-bg{
+  background-image: url(../imgs/joinus-bg.jpg);
+}
+
+.title{
+  font-size: 56px;
+  line-height: 1.38;
+  color: white;
+}
+.sub-title{
+  font-size: 22px;
+  line-height: 1.45;
+  padding-top: 15px;
+  color: #fff;
+}
+.info{
+  padding: 10px;
+}
+.info-title{
+  font-size: 16px;
+  color: #1a1a1a;
+  line-height: 20px;
+} 
+.info-title:hover{
+  color: red;
+}
+.info-text{
+  font-size: 13px;
+}
+.info-date{
+  line-height: 1.1;
+  color: #888;
+  font-size: 14px;
+}
+.content{
+  margin-bottom: 100px;
+}
+.footer{
+  margin-top: 100px;
+}

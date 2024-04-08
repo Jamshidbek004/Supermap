@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: 14px;
+}
+.content-title{
+  font-size: 48px;
+  line-height: 60px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #282828;
+  margin: 0.67em 0;
+  max-width: 940px;
+}
+.content-info{
+  font-size: 17px;
+  line-height: 26px;
+  max-width: 940px;
+}
+/* detail */
+.detail{
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.detail-text{
+  margin-bottom: 60px;
+}
+.detail-text h2{
+  font-size: 36px;
+  line-height: 1;
+}
+.more-link{
+  color: #222;
+  font-size: 22px;
+}
+.detail-card h4{
+  color: #434343;
+  padding: 15px 10px;
+  margin: 0;
+  padding-bottom: 15px;
+  height: auto;
+  min-height: 61px;
+  font-size: 17px;
+  line-height: 1.4;
+}

@@ -1,0 +1,16 @@
+{% load static %}
+<h1> yanginfoydalanuvchilarni ro'yxatdan o'tkazish </h1>
+<p> Ro'yxatdan o'tkazish uchun quyidagi formani to'ldiring </p>
+<form method="post"> {% csrf_token %}
+    <input type="text" name="username" class="form-control form-control-lg" placeholder="ism">
+    <input type="text" name="first_name" class="form-control form-control-lg" placeholder="familya">
+    <input type="text" name="email" class="form-control form-control-lg" placeholder="email">
+    <input type="text" name="password" class="form-control form-control-lg" placeholder="password">
+    <input type="text" name="password_2" class="form-control form-control-lg" placeholder="password_2">
+    <div class="input-group-append">
+        <button class="btn btn-primary font-weight-bold px-3">ro'yxatdan o'tish</button>
+    </div>
+
+    <button type="submit">Ro'yxatdan o'tish</button>
+
+</form>

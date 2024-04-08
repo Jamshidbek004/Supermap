@@ -1,0 +1,281 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nav-footer.css' %}">
+  <link rel="stylesheet" href="{% static 'css/supermapgishaqida.css' %}">
+  <link rel="shortcut icon" href="{% static 'imgs/icon.jpg' %}">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="nav d-flex align-items-center">
+    <div class="container nav__content d-flex justify-content-between align-items-center">
+      <a href="{% url 'index' %}"><img class="nav-logo" src="{% static 'imgs/logo.png' %}" alt=""></a>
+      <ul class="navbar-links d-lg-flex d-none list-unstyled mb-0">
+        <li class="nav__mahsulotlar">
+          <div class="dropdown">
+            <button class="btn btn-secondary bg-light text-black border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mahsulotlar
+            </button>
+            <ul class="dropdown-menu w-100">
+                <div class="row">
+                  <div class="col-3">
+                    <a href="{% url 'supermapgishaqida' %}"><h4>SuperMap GIS haqida</h3></a>
+                  </div>
+                  <div class="col-3">
+                    <a href="{% url 'asosiytexnalogiyalar' %}"><h4>Asosiy texnologiyalar</h4></a>
+                    <a href="{% url 'ai_gis' %}">AI GIS</a>
+                    <a href="{% url 'kattamalumot' %}">Katta ma'lumotlar GIS</a>
+                    <a href="{% url 'html_3d_gis' %}">Yangi 3D GIS</a>
+                    <a href="{% url 'bulutligisserveri' %}">Bulutli GIS</a>
+                    <a href="{% url 'cross_platform' %}">O'zaro platforma GIS</a>
+                  </div>
+                  <div class="col-3">
+                    <a href="{% url 'gis_10_i' %}"><h4>SuperMap GIS 10i</h4></a>
+                    <a href="{% url 'cloud_gis' %}">Bulutli GIS serveri</a>
+                    <a href="{% url 'edge_gis_server' %}">Edge GIS serveri</a>
+                    <a href="{% url 'terminalgisforpc' %}">KOMPYUTER uchun GIS terminali</a>
+                    <a href="{% url 'terminalgisforweb' %}">Internet uchun GIS terminali</a>
+                    <a href="{% url 'terminalgisformobile' %}">Mobil qurilmalar uchun GIS terminali</a>
+                  </div>
+                  <div class="col-3">
+                    <a href="{% url 'gis9' %}"><h4>SuperMap GIS 9D(2019)</h4></a>
+                    <a href="{% url 'cloud_gis' %}">Bulutli GIS serveri</a>
+                    <a href="{% url 'edge_gis_server' %}">Edge GIS serveri</a>
+                    <a href="{% url 'terminalgisforpc' %}">KOMPYUTER uchun GIS terminali</a>
+                    <a href="{% url 'terminalgisforweb' %}">Brauzer uchun GIS</a>
+                    <a href="{% url 'terminalgisformobile' %}">Mobil qurilmalar uchun GIS</a>
+                  </div>
+                </div>
+            </ul>
+          </div>
+      </li>
+        <li class="nav__mahsulotlar">
+          <div class="dropdown">
+            <button class="btn btn-secondary bg-light text-black border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Yechimlar
+            </button>
+            <ul class="dropdown-menu w-100 nav__yechimlar">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-4">
+                    <a href="{% url 'aqllishahar' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/smartcity.jpg' %}" alt="">
+                      <p>Aqlli shahar</p>
+                    </a>
+                    <a href="{% url 'tabiiyresurs' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/resourse.jpg' %}" alt="">
+                      <p>Tabiiy resurslar</p>
+                    </a>
+                    <a href="{% url 'mulkboshqarish' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/management.jpg' %}" alt="">
+                      <p>Mulkni boshqarish</p>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="{% url 'xavfsizlik' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/safety.jpg' %}" alt="">
+                      <p>Jamoat xavfsizligi</p>
+                    </a>
+                    <a href="{% url 'transport' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/transportation.jpg' %}" alt="">
+                      <p>Transport</p>
+                    </a>
+                    <a href="{% url 'suvsaqlash' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/water.jpg' %}" alt="">
+                      <p>Suvni tejash</p>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="{% url 'yermulk' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/land.jpg' %}" alt="">
+                      <p>Yerni boshqarish</p>
+                    </a>
+                    <a href="{% url 'tabiiyofat' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/disaster.jpg' %}" alt="">
+                      <p>Tabiiy ofat</p>
+                    </a>
+                    <a href="{% url 'bimgis' %}" class="nav__yechimlar--item">
+                      <img src="{% static 'imgs/bimgis.jpg' %}" alt="">
+                      <p>BIM+GIS</p>
+                    </a>
+                  </div>
+                </div>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__protect">
+          <div class="dropdown">
+          <button class="btn btn-secondary btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Qo'llab-quvvatlash
+          </button>
+          <ul class="dropdown-menu">
+            <div class="row">
+              <div class="col-12">
+                <li><a class="dropdown-item" href="https://www.supermap.com/en-us/html/down.html">Yuklab olish va onlayn yordam <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./html/article.html">Maqolalar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.supermap.com/en-us/list/?100_1.html">Ko'p so'raladigan savollar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://sso.supermap.com/login?service=https://www.supermapol.com/web/pricing/triallicense">Sinov litsenziyasi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+        <li class="nav__batafsil">
+          <div class="dropdown">
+            <button class="btn btn-secondary btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Batafsil
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'supermapgishaqida' %}">Kirish</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'news' %}">Yangiliklar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'events' %}">Voqealar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'joinus' %}">Karyera <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.supermap.com/en-us/about/?79_1.html">Kontaktlar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.supermap.com/en-us/list/?94_1.html">Maslahatlar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-search">
+        <i class="fa-solid fa-earth-americas"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- header -->
+  <header class="header d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+        <h1 class="h1 text-white">SuperMap GIS haqida</h1>
+        <p>SuperMap GIS SuperMap Software Co., Ltd tomonidan ishlab chiqilgan. Bu ish stoli GIS, xizmat GIS, komponent GIS va mobil GIS platformalari, shuningdek, fazoviy ma'lumotlarni ishlab chiqarish, qayta ishlash va boshqarish vositalarini o'z ichiga olgan GIS platformasi uchun to'liq dasturiy ta'minot to'plami.
+        </p>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- text -->
+  <section class="text-data">
+    <div class="container text text-center">
+      <h2>SuperMap GIS</h2>
+      <p>SuperMap GIS SuperMap Software Co., Ltd tomonidan ishlab chiqilgan. Bu ish stoli GIS, xizmat GIS, komponent GIS va mobil GIS platformalari, shuningdek, fazoviy ma'lumotlarni ishlab chiqarish, qayta ishlash va boshqarish vositalarini o'z ichiga olgan GIS platformasi uchun to'liq dasturiy ta'minot to'plami. Uzluksiz texnologik innovatsiyalar, bozorni o'rganish va tajriba to'plash orqali SuperMap GIS to'liq burchakli va turli sohalarning turli talablariga javob beradigan kuchli funktsiyalarga ega bo'lgan yaxshi brend GIS dasturiy ta'minotini yaratdi va u har bir GISda keng qo'llanildi. Xitoyda sanoat, ko'plab ikkilamchi rivojlanish kompaniyalarini ilhomlantirmoqda.</p>
+    </div>
+  </section>
+  <!-- text end -->
+  <!-- newproduct -->
+  <section class="newproduct">
+    <h2 class="text-center">Eng so'nggi mahsulotlar</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 product-left">
+          <img class="img-fluid" src="{% static 'imgs/newproduct.jpg' %}" alt="">
+        </div>
+        <div class="col-md-6 product-right d-flex align-items-center">
+          <div class="product-text">
+            <h4>SuperMap GIS 10i AI texnologiyasini to'liq birlashtiradi va GIS platformasi dasturiy ta'minoti uchun beshta asosiy texnologiyadan iborat "BitCC" tizimini yaratadi. U katta ma'lumotlar GIS, AI GIS, yangi 3D GIS, Cloud Native GIS va o'zaro platforma GISni o'z ichiga oladi, bu GIS nazariyasi va texnologiyasini sezilarli darajada yaxshilaydi va turli sohalar uchun geo-razvedkani boyitadi.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newproduct end -->
+  <!-- new technology -->
+  <section class="technology">
+    <div class="container">
+      <h2 class="text-center">Yuqori texnologiyali</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-2 col-12 d-flex flex-column align-items-center">
+          <img src="{% static 'imgs/techno1.png' %}" alt="">
+          <h3 class="text-center">AI GIS</h3>
+        </div>
+        <div class="col-md-2 col-12 d-flex flex-column align-items-center">
+          <img src="{% static 'imgs/techno2.png' %}" alt="">
+          <h3 class="text-center">O'zaro platforma</h3>
+        </div>
+        <div class="col-md-2 col-12  d-flex flex-column align-items-center">
+          <img src="{% static 'imgs/techno3.png' %}" alt="">
+          <h3 class="text-center">Cloud Native GIS</h3>
+        </div>
+        <div class="col-md-2 col-12 d-flex flex-column align-items-center">
+          <img src="{% static 'imgs/techno4.png' %}" alt="">
+          <h3 class="text-center">Yangi 3D GIS</h3>
+        </div>
+        <div class="col-12 col-md-2 d-flex flex-column align-items-center">
+          <img src="{% static 'imgs/techno5.png' %}" alt="">
+          <h3 class="text-center">Katta GIS ma'lumotlari</h3>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- new technology end -->
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__content col-md-3 col-sm-6 col-12">
+          <h3><a href="{% url 'supermapgishaqida' %}">SuperMap GIS</a></h3>
+          <ul class="footer-links">
+            <li><a href="{% url 'cloud_gis' %}">Bulutli GIS serveri</a></li>
+            <li><a href="{% url 'edge_gis_server' %}">Edge GIS serveri</a></li>
+            <li><a href="{% url 'terminalgisforpc' %}">KOMPYUTER uchun GIS terminali</a></li>
+            <li><a href="{% url 'terminalgisforweb' %}">Internet uchun GIS terminali</a></li>
+            <li><a href="{% url 'terminalgisformobile' %}">Mobil qurilmalar uchun GIS terminali</a></li>
+          </ul>
+        </div>
+        <div class="footer__content col-md-3 col-sm-6 col-12">
+          <h3><a href="#!">Qo'llab-quvvatlash</a></h3>
+          <ul class="footer-links">
+            <li><a href="https://www.supermap.com/en-us/html/down.html">Yuklab olish va onlayn yordam <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="./html/article.html">Maqolalar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.supermap.com/en-us/list/?100_1.html">Ko'p so'raladigan savollar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://sso.supermap.com/login?service=https://www.supermapol.com/web/pricing/triallicense">Sinov litsenziyasi <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__content col-md-2 col-sm-6 col-12">
+          <h3><a href="{% url 'events' %}">Voqealar</a></h3>
+          <ul class="footer-links">
+            <li><a href="http://www.gistc.com/en/">GTC 2019 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="http://www.giscontest.com/en/">GIS Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.supermap.com/en/events/gtc2018/index.asp">GTC 2018 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.supermap.com/events/gtc2017/index_en.html">GTC 2017 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__content col-md-2 col-sm-6 col-12">
+          <h3><a href="#!">Biz haqimizda</a></h3>
+          <ul class="footer-links">
+            <li><a href="{% url 'supermapgishaqida' %}">Kirish</a></li>
+            <li><a href="{% url 'news' %}">Yangiliklar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="{% url 'joinus' %}">Karyera <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.supermap.com/en-us/about/?79_1.html">Kontaktlar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.supermap.com/en-us/list/?94_1.html">Maslahatlar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__logos col-md-2 col-sm-12 flex-md-wrap flex-nowrap">
+          <a href="https://www.linkedin.com/company/supermap/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/SuperMap/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://twitter.com/SuperMap__GIS"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/supermap_1997/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="http://www.youtube.com/SuperMapGIS"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#!"><i class="fa-solid fa-comments"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{% load static %}
+<h1>commentni ozgartirish</h1>
+<form method="post">{% csrf_token %}
+  {{form.as_p}}
+  <button type="sumbit">o'zgartirish</button>
+
+</form>

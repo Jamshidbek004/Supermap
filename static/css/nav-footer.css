@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: 14px;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.nav{
+  height: 55px;
+  padding: 10px 0;
+}
+.nav__mahsulotlar, .nav__protect, .nav__batafsil{
+  width: 190px;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: #434343;
+  line-height: 1.625;
+  font-size: 16px; 
+}
+.nav-search{
+  display: flex;
+  gap: 20px;
+}
+.nav-logo{
+  height: 35px;
+}
+.btn-secondary{
+  background: white !important;
+  border: none;
+  font-size: 16px !important;
+  font-family: Helvetica !important;
+  }
+  /* nav__mahsulotlar */
+.nav__mahsulotlar .dropdown-menu{
+  width: 1400px !important;
+  left: -10px !important;
+  padding: 40px 40px !important;
+}
+.nav__protect .dropdown-menu{
+  width: 300px !important;
+}
+
+.nav__mahsulotlar .dropdown-menu h4{
+  margin-bottom: 10px;
+}
+.nav__mahsulotlar .dropdown-menu .row .col-3 a{
+  font-size: 16px;
+margin-bottom: 10px;
+}
+.nav__mahsulotlar .dropdown-menu .row .col-3{
+  display: flex;
+  flex-direction: column;
+}
+/* .nav mahsulotlar end */
+.nav__yechimlar--item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: #595757;
+}
+.nav__yechimlar--item p{
+  font-size: 25px;
+}
+/* footer */
+.footer{
+  background: #edf0f1;
+  padding-top: 30px;
+}
+.footer .footer__content i{
+  font-size: 12px;
+  margin-left: 3px;
+  transition: all 1s;
+}
+.footer .footer__content a:hover{
+  margin-left: 5px;
+}
+.footer__content h3 a{
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #282828;
+  margin-top: 20px;
+  line-height: 1.1;
+}
+.footer__content h3{
+  margin-bottom: 20px;
+}
+.footer-links{
+  padding-left: 0;
+}
+.footer__content .footer-links li{
+  list-style: none;
+  padding-bottom: 15px;
+}
+.footer__content .footer-links a{
+  color: #282828;
+  text-decoration: none;
+  outline: 0;
+}
+.footer__logos{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__logos a{
+  width: 50%;
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+.footer__logos .fa-brands, .footer__logos .fa-solid{
+  font-size: 28px;
+  color: black
+}
+.footer__logos .fa-brands:hover, .footer__logos .fa-solid:hover{
+  color: #282828;
+}
+/* footer end */

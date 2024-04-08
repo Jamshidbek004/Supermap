@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header {
+  background: url(../imgs/bulutligis-bg.jpg);
+  background-size: cover;
+  height: 500px;
+}
+.header h1 {
+  font-size: 56px;
+  line-height: 1.38;
+}
+.header p {
+  font-size: 22px;
+  line-height: 1.45;
+  color: #fff;
+  padding-top: 15px;
+}
+/* critic */
+.critic {
+  margin-top: 100px;
+}
+.critic h2,
+.property h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 45px;
+}
+/* newproduct */
+.newproduct{
+  margin-top: 60px;
+}
+.newproduct h2, .technology h2{
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 45px;
+}
+.product-text{
+  background: #fff;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  width: 100%;
+}
+.product-text h4{
+  line-height: 30px;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.product-right{
+  margin-left: -60px;
+}
+.product-right2{
+  margin-right: -60px;
+  z-index: 9;
+}
+@media (max-width: 992px) {
+  .product-right{
+    margin-left: 0;
+  }
+}
+/* newproduct end */

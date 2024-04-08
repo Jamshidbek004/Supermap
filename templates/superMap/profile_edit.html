@@ -1,0 +1,9 @@
+<h1> Foydalanuvchi malumotlarni o'zgartirish</h1>
+<form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+    {{ user_form.as_p}}
+    {{ profile_form.as_p }}
+    <button type="submit"> O'zgartirish</button>
+
+
+</form>
+<a href="{% url 'profile' %}"> <button type="submit"> Profilga qaytish</button></a>

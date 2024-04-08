@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header{
+  background: url(../imgs/asosiytexno-bg.jpg);
+  background-size: cover;
+  height: 500px;
+}
+.header h1{
+  font-size: 56px;
+  line-height: 1.38;
+}
+.header p{
+  font-size: 22px;
+  line-height: 1.45;
+  color: #fff;
+  padding-top: 15px;
+}
+/* strategy */
+.strategy{
+  margin-top: 100px;
+}
+.strategy-left p{
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+/* strategy end */
+/* key_body */
+.key_body {
+  background: url(../imgs/keybg.jpg);
+  background-size: contain;
+  padding: 50px 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.keys_left{
+  background: url(../imgs/key022.png) no-repeat left center;
+  background-size: contain;
+}
+.key_body .key{
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 20px;
+  margin-bottom: 0;
+  list-style: none;
+  margin-top: 0;
+}
+.keys_right .key img{
+  width: 50px;
+  height: 45px;
+}
+.keys_right .key h4{
+  font-size: 17px;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.keys_right .key a{
+  font-size: 14px;
+  float: right;
+  color: #000;
+  text-decoration: none;
+}
+.keys_right .key li{
+  margin: 10px 0;
+}
+/* key_body end */
